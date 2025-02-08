@@ -1,0 +1,17 @@
+spring.application.name=UserManagementSystem
+server.port=8081
+
+# H2 Database Configuration
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+# Hibernate Configuration
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+
+# Enable H2 Console (Optional)
+spring.h2.console.enabled=true
+spring.h2.console.path=/project

@@ -1,0 +1,5 @@
+package com.usermanagement.service;
+
+public class UserService {
+
+}

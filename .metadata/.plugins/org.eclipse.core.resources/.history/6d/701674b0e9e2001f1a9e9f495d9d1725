@@ -1,0 +1,5 @@
+package com.aniandjava.springboot;
+
+public class DemoController {
+
+}

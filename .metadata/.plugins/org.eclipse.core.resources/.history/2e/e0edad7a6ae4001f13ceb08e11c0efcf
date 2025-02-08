@@ -1,0 +1,5 @@
+package com.usermanagement.entity;
+
+public class User {
+
+}
