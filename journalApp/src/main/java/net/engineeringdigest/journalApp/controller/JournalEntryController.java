@@ -24,12 +24,12 @@ public class JournalEntryController {
     }
 
     //data send krne ke liye id title content
-    @PostMapping
-    public boolean createEntry(@RequestBody JournalEntry myEntry) {
-        //localhost:8081/journal    for Post body row json
-        journalEntries.put(myEntry.getId(), myEntry);
-        return true;
-    }
+//    @PostMapping
+//    public boolean createEntry(@RequestBody JournalEntry myEntry) {
+//        //localhost:8081/journal    for Post body row json
+//        journalEntries.put(myEntry.getId(), myEntry);
+//        return true;
+//    }
 
     //one id title content dekhna ho to use this //spacfic general entry
     @GetMapping("id/{myId}")
