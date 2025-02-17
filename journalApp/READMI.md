@@ -144,3 +144,19 @@ journal_entries
 journaldb> db.createCollection("users")
 { ok: 1 }
 
+// -------------------------@Autowired annotation --------------------------
+@Autowired ek annotation hai jo Spring framework mein use hota hai. Yeh dependency injection ke liye
+use hota hai. Is case mein, journalEntryRepository ko automatically inject kar diya jaata hai,
+jab class ka instance create hota hai.
+
+Matlab, aap ko manually object banane ki zarurat nahi padti. Spring context yeh kaam aapke liye
+automatically kar deta hai, aur JournalEntryRepository ko inject kar deta hai jo us service ya 
+repository ka implementation hai.
+Kuch aisa hota hai:
+java
+public class MyService {
+@Autowired
+private JournalEntryRepository journalEntryRepository;
+
+    // Methods that use journalEntryRepository
+}
